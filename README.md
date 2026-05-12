@@ -197,18 +197,19 @@ The documentation includes:
 - Cheatsheets for the DSL
 
 Additional documentation files:
-- [Commands](commands.html)
-- [Events](events.html)
-- [Projections](projections.html)
-- [Event Handlers](event_handlers.html)
-- [Middleware](middleware.html)
-- [Parameter Handling](parameter_handling.html)
-- [Transactions](transactions.html)
-- [Context Propagation](context_propagation.html)
-- [Error Handling](error_handling.html)
-- [Application](application.html)
-- [Routers](routers.html)
-- [Snapshotting](snapshotting.html)
+
+- [Commands](documentation/commands.html)
+- [Events](documentation/events.html)
+- [Projections](documentation/projections.html)
+- [Event Handlers](documentation/event_handlers.html)
+- [Middleware](documentation/middleware.html)
+- [Parameter Handling](documentation/parameter_handling.html)
+- [Transactions](documentation/transactions.html)
+- [Context Propagation](documentation/context_propagation.html)
+- [Error Handling](documentation/error_handling.html)
+- [Application](documentation/application.html)
+- [Routers](documentation/routers.html)
+- [Snapshotting](documentation/snapshotting.html)
 
 ## Commands
 
