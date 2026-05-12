@@ -1,16 +1,16 @@
 defmodule AshCommanded.Commanded.Sections.ApplicationSection do
   @moduledoc """
   Defines the schema for the `application` section of the Commanded DSL.
-  
+
   The application section allows configuring a Commanded application for an Ash domain,
   specifying settings such as the event store adapter, pubsub mechanism, and registry.
-  
+
   ## Example
-  
+
   ```elixir
   defmodule MyApp.Domain do
     use Ash.Domain
-    
+
     commanded do
       application do
         otp_app :my_app
@@ -21,12 +21,12 @@ defmodule AshCommanded.Commanded.Sections.ApplicationSection do
         prefix "MyApp"
       end
     end
-    
+
     # resources...
   end
   ```
   """
-  
+
   @doc """
   Returns the schema for the application section.
   """
@@ -78,16 +78,16 @@ defmodule AshCommanded.Commanded.Sections.ApplicationSection do
         default: false
       ],
       prefix: [
-        type: :string,
+        type: {:or, [:string, {:in, [nil]}]},
         doc: "Application module prefix for generated code",
         default: nil
       ]
     ]
   end
-  
+
   @doc """
   Returns the entities for the application section.
-  
+
   The application section doesn't define entities, only configuration options.
   """
   def entities, do: []
